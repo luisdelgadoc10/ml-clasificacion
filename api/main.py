@@ -1,6 +1,8 @@
 # api/main.py
 import time
 from fastapi import FastAPI
+from fastapi.responses import HTMLResponse
+
 from src.schemas import (
     FuncionSaludInput,
     FuncionEncuentroInput,
@@ -28,6 +30,19 @@ app = FastAPI(
     description="Devuelve subfunción, confianza (%) y tiempo de predicción (ms)",
     version="1.2"
 )
+
+@app.get("/", response_class=HTMLResponse)
+def home():
+    return """
+    <html>
+        <head><title>API ML</title></head>
+        <body style="font-family:sans-serif; text-align:center; margin-top:50px;">
+            <h1>🚀 API de Modelos de Predicción ML</h1>
+            <p>Todo funciona correctamente.</p>
+            <a href="/docs">Ver documentación</a>
+        </body>
+    </html>
+    """
 
 @app.post("/funcion-salud")
 def clasificar_funcion_salud(entrada: FuncionSaludInput):
