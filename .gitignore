@@ -6,5 +6,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Si quieres incluir modelos .pkl, comenta esta línea
+# No excluir modelos ni datasets (son livianos)
 # *.pkl
+# *.csv
