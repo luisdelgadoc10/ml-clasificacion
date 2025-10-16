@@ -1,0 +1,10 @@
+# Entorno virtual
+venv/
+__pycache__/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Si quieres incluir modelos .pkl, comenta esta línea
+# *.pkl
