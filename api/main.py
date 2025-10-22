@@ -57,12 +57,12 @@ def clasificar_funcion_salud(entrada: FuncionSaludInput):
     resultado, confianza = predict_salud_with_confidence(entrada.dict())
     end_time = time.perf_counter()
     
-    tiempo_ms = round(end_time - start_time, 4) # Convertir a milisegundos
+    tiempo_s = round(end_time - start_time, 4) # Convertir a milisegundos
 
     return {
         "subfuncion_salud": resultado,
         "confianza": round(confianza * 100),
-        "tiempo_ms": tiempo_ms
+        "tiempo_s": tiempo_s
     }
 
 # === Endpoint ENCUENTRO ===
@@ -70,11 +70,11 @@ def clasificar_funcion_salud(entrada: FuncionSaludInput):
 def clasificar_encuentro(entrada: FuncionEncuentroInput):
     start = time.perf_counter()
     resultado, confianza = predict_encuentro_with_confidence(entrada.dict())
-    tiempo_ms = round(time.perf_counter() - start, 4)
+    tiempo_s = round(time.perf_counter() - start, 4)
     return {
         "subfuncion_encuentro": resultado,
         "confianza": round(confianza * 100),
-        "tiempo_ms": tiempo_ms
+        "tiempo_s": tiempo_s
     }
 
 # === Endpoint HOSPEDAJE ===
@@ -82,11 +82,11 @@ def clasificar_encuentro(entrada: FuncionEncuentroInput):
 def clasificar_hospedaje(entrada: FuncionHospedajeInput):
     start = time.perf_counter()
     resultado, confianza = predict_hospedaje_with_confidence(entrada.dict())
-    tiempo_ms = round(time.perf_counter() - start, 4)
+    tiempo_s = round(time.perf_counter() - start, 4)
     return {
         "subfuncion_hospedaje": resultado,
         "confianza": round(confianza * 100),
-        "tiempo_ms": tiempo_ms
+        "tiempo_s": tiempo_s
     }
 
 # === Endpoint EDUCACION ===
@@ -94,11 +94,11 @@ def clasificar_hospedaje(entrada: FuncionHospedajeInput):
 def clasificar_educacion(entrada: FuncionEducacionInput):
     start = time.perf_counter()
     resultado, confianza = predict_educacion_with_confidence(entrada.dict())
-    tiempo_ms = round(time.perf_counter() - start, 4)
+    tiempo_s = round(time.perf_counter() - start, 4)
     return {
         "subfuncion_educacion": resultado,
         "confianza": round(confianza * 100),
-        "tiempo_ms": tiempo_ms
+        "tiempo_s": tiempo_s
     }
 
 # === Endpoint INDUSTRIAL ===
@@ -106,11 +106,11 @@ def clasificar_educacion(entrada: FuncionEducacionInput):
 def clasificar_industrial(entrada: FuncionIndustrialInput):
     start = time.perf_counter()
     resultado, confianza = predict_industrial_with_confidence(entrada.dict())
-    tiempo_ms = round(time.perf_counter() - start, 4)
+    tiempo_s = round(time.perf_counter() - start, 4)
     return {
         "subfuncion_industrial": resultado,
         "confianza": round(confianza * 100),
-        "tiempo_ms": tiempo_ms
+        "tiempo_s": tiempo_s
     }
 
 # === Endpoint OFICINAS ADMINISTRATIVAS ===
@@ -118,11 +118,11 @@ def clasificar_industrial(entrada: FuncionIndustrialInput):
 def clasificar_oficinas(entrada: FuncionOficinasInput):
     start = time.perf_counter()
     resultado, confianza = predict_oficinas_with_confidence(entrada.dict())
-    tiempo_ms = round(time.perf_counter() - start, 4)
+    tiempo_s = round(time.perf_counter() - start, 4)
     return {
         "subfuncion_oficinas": resultado,
         "confianza": round(confianza * 100),
-        "tiempo_ms": tiempo_ms
+        "tiempo_s": tiempo_s
     }
 
 # === Endpoint COMERCIO ===
@@ -130,11 +130,11 @@ def clasificar_oficinas(entrada: FuncionOficinasInput):
 def clasificar_comercio(entrada: FuncionComercioInput):
     start = time.perf_counter()
     resultado, confianza = predict_comercio_with_confidence(entrada.dict())
-    tiempo_ms = round(time.perf_counter() - start, 4)
+    tiempo_s = round(time.perf_counter() - start, 4)
     return {
         "subfuncion_comercio": resultado,
         "confianza": round(confianza * 100),
-        "tiempo_ms": tiempo_ms
+        "tiempo_s": tiempo_s
     }
 
 # === Endpoint ALMACEN ===
@@ -142,9 +142,9 @@ def clasificar_comercio(entrada: FuncionComercioInput):
 def clasificar_almacen(entrada: FuncionAlmacenInput):
     start = time.perf_counter()
     resultado, confianza = predict_almacen_with_confidence(entrada.dict())
-    tiempo_ms = round(time.perf_counter() - start, 4)
+    tiempo_s = round(time.perf_counter() - start, 4)
     return {
         "subfuncion_almacen": resultado,
         "confianza": round(confianza * 100),
-        "tiempo_ms": tiempo_ms
+        "tiempo_s": tiempo_s
     }
