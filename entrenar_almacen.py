@@ -70,8 +70,8 @@ for _ in range(1500):
         subfuncion = "8.2"
 
     # === AÑADIR RUIDO (5%) ===
-    if np.random.rand() < 0.05:
-        subfuncion = np.random.choice(["8.1", "8.2", "8.3"])
+    # if np.random.rand() < 0.01:
+    #     subfuncion = np.random.choice(["8.1", "8.2", "8.3"])
 
     # === CARACTERÍSTICAS ESCALABLES ===
     # 1. Es 8.3: productos peligrosos

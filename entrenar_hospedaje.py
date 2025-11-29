@@ -49,8 +49,8 @@ for _ in range(1600):
             subfuncion = "3.1"
 
     # Añadir ruido (5% de casos con subfunción cambiada)
-    if np.random.rand() < 0.05:
-        subfuncion = np.random.choice(["3.1", "3.2", "3.3", "3.4"])
+    # if np.random.rand() < 0.01:
+    #     subfuncion = np.random.choice(["3.1", "3.2", "3.3", "3.4"])
 
     data.append([
         categoria_estrellas,

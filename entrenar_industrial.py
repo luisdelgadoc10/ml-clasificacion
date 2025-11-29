@@ -83,8 +83,8 @@ for _ in range(1600):
         subfuncion = "5.2"
 
     # === AÑADIR RUIDO (5%) ===
-    if np.random.rand() < 0.05:
-        subfuncion = np.random.choice(["5.1", "5.2", "5.3"])
+    # if np.random.rand() < 0.01:
+    #     subfuncion = np.random.choice(["5.1", "5.2", "5.3"])
 
     # === CARACTERÍSTICAS ESCALABLES ===
     # 1. es_artesanal: basado en palabras clave

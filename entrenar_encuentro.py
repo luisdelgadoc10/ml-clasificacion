@@ -1,4 +1,4 @@
-# entrenar_encuentro_escalable.py
+# entrenar_encuentro.py
 import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
@@ -79,7 +79,7 @@ df = pd.DataFrame(data, columns=[
 ])
 
 os.makedirs("data/raw", exist_ok=True)
-df.to_csv("data/raw/dataset_encuentro_escalable.csv", index=False)
+df.to_csv("data/raw/dataset_encuentro.csv", index=False)
 
 # Entrenar modelo
 X = df.drop("subfuncion", axis=1)

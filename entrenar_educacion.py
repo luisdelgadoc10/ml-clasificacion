@@ -66,8 +66,8 @@ for _ in range(1800):
             subfuncion = "4.2"
 
     # === AÑADIR RUIDO (5% de casos con etiqueta cambiada) ===
-    if np.random.rand() < 0.05:
-        subfuncion = np.random.choice(["4.1", "4.2", "4.3", "4.4"])
+    # if np.random.rand() < 0.01:
+    #     subfuncion = np.random.choice(["4.1", "4.2", "4.3", "4.4"])
 
     # === GENERAR CARACTERÍSTICAS ESCALABLES (IGUALES QUE EN PREPROCESS) ===
     

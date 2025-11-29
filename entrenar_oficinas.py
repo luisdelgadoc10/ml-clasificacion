@@ -122,8 +122,8 @@ for _ in range(1800):
             subfuncion = "6.5"
 
     # === AÑADIR RUIDO (5%) ===
-    if np.random.rand() < 0.05:
-        subfuncion = np.random.choice(["6.1", "6.2", "6.3", "6.4", "6.5"])
+    # if np.random.rand() < 0.01:
+    #     subfuncion = np.random.choice(["6.1", "6.2", "6.3", "6.4", "6.5"])
 
     # === CARACTERÍSTICAS ESCALABLES ===
     # 1. Cumple 6.1: ≤4 pisos y ≤560 m² por piso

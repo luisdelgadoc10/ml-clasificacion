@@ -1,4 +1,4 @@
-# entrenar_modelo_escalable.py
+# entrenar_salud.py
 import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
